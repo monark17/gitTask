@@ -1,0 +1,8 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome to the NotesApp!</h1>
+  <p>Explore the power of organized note-taking with NotesApp! Whether you're a student, professional, or just someone who loves jotting down ideas, our app is designed to make your note-taking experience seamless and enjoyable.</p>
+  <p><a href="{% url 'login' %}">Login</a> | <a href="{% url 'register' %}">Sign Up</a></p>
+{% endblock %}

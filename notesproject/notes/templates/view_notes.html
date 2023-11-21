@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h2>Your Notes</h2>
+    {% if notes %}
+      <ul class="list-group">
+        {% for note in notes %}
+          <li class="list-group-item">{{ note.title }} - {{ note.content }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No notes available.</p>
+    {% endif %}
+    <a href="{% url 'add_note' %}" class="btn btn-primary mt-3">Add Note</a>
+  </div>
+{% endblock %}

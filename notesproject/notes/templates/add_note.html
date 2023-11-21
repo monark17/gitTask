@@ -1,0 +1,18 @@
+<!-- templates/add_note.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h2>Add Note</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Add Note</button>
+    </form>
+    <p><a href="{% url 'view_notes' %}">View Notes</a></p>
+    
+    <!-- Add the button to go to the user profile -->
+    <a href="{% url 'user_profile' %}" class="btn btn-primary">Go to Your Profile</a>
+  </div>
+{% endblock %}
+

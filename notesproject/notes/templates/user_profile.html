@@ -1,0 +1,42 @@
+<!-- templates/user_profile.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h2>User Profile</h2>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h4>User Information</h4>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+      </div>
+
+      <div class="col-md-6">
+        <h4>User Notes</h4>
+
+        <div class="notes-container">
+          {% if user_notes %}
+            <ul>
+              {% for note in user_notes %}
+                <li>{{ note.title }} - {{ note.content }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p>No notes available.</p>
+          {% endif %}
+        </div>
+
+        <div class="actions-container">
+          <a href="{% url 'add_note' %}" class="btn btn-primary">Add Note</a>
+
+          <!-- Add the logout button -->
+          <form action="{% url 'logout' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Logout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
