@@ -63,3 +63,6 @@ This Django-based web application allows users to add and manage notes throughou
 - [Ammaar Mosavel](https://github.com/monark17)
 - [Django](https://www.djangoproject.com/)
 - [Python](https://www.python.org/)
+
+GitHub Repository: https://github.com/monark17/notesproject
+
