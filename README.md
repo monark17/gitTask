@@ -54,9 +54,9 @@ This Django-based web application allows users to add and manage notes throughou
 
 ## Screenshots
 
-![Screenshot 1](screenshots/Screenshot (13).png)
-![Screenshot 2](screenshots/Screenshot (14).png)
-![Screenshot 3](screenshots/Screenshot (15).png)
+![Screenshot 1](Screenshot (13).png)
+![Screenshot 2](Screenshot (14).png)
+![Screenshot 3](Screenshot (15).png)
 
 ## Credits
 
