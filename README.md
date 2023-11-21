@@ -54,9 +54,12 @@ This Django-based web application allows users to add and manage notes throughou
 
 ## Screenshots
 
-![Screenshot 1](Screenshot (13).png)
-![Screenshot 2](Screenshot (14).png)
-![Screenshot 3](Screenshot (15).png)
+![Screenshot (13)](https://github.com/monark17/gitTask/assets/142005927/cfeb4dbe-8256-40bb-9b59-c5b7d4921649)
+
+![Screenshot (14)](https://github.com/monark17/gitTask/assets/142005927/4d3c8884-d668-4ae2-8421-6f625d7cd8a1)
+
+![Screenshot (15)](https://github.com/monark17/gitTask/assets/142005927/d52cf0ee-749d-4f4b-8df2-fc179b777fa2)
+
 
 ## Credits
 
